@@ -1,0 +1,1726 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "robocasa-episode__object_reference",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg"
+      ],
+      "question": "Point to the visible chicken drumstick. Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          722,
+          708
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "object_reference",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "visible_instance_point"
+        },
+        "evidence": {
+          "operator": "visible_instance_point",
+          "frame": 0,
+          "object": "obj",
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__PIO|S1 referred-object localization|bbox",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg"
+      ],
+      "question": "Point to the chicken drumstick on the plate. Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          722,
+          708
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "PIO|S1 referred-object localization|bbox",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "visible_instance_point"
+        },
+        "evidence": {
+          "operator": "visible_instance_point",
+          "frame": 0,
+          "object": "obj",
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__PIO|S1 referred-object localization|point",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg"
+      ],
+      "question": "Point to the chicken drumstick that must be picked up. Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          722,
+          708
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "PIO|S1 referred-object localization|point",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "visible_instance_point"
+        },
+        "evidence": {
+          "operator": "visible_instance_point",
+          "frame": 0,
+          "object": "obj",
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__RoboRefIt|referring-expression grounding|bbox",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg"
+      ],
+      "question": "Point to the food resting on the plate that must go into the pan. Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          722,
+          708
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "RoboRefIt|referring-expression grounding|bbox",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "visible_instance_point"
+        },
+        "evidence": {
+          "operator": "visible_instance_point",
+          "frame": 0,
+          "object": "obj",
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__RoboRefIt|referring-expression grounding|point",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg"
+      ],
+      "question": "Point to the object described by \"the chicken drumstick on the plate\". Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          722,
+          708
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "RoboRefIt|referring-expression grounding|point",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "visible_instance_point"
+        },
+        "evidence": {
+          "operator": "visible_instance_point",
+          "frame": 0,
+          "object": "obj",
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__PixMo-Points|present-instance pointing|bbox",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg"
+      ],
+      "question": "Point to the visible chicken drumstick, one point per instance. Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          722,
+          708
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "PixMo-Points|present-instance pointing|bbox",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "visible_instance_point"
+        },
+        "evidence": {
+          "operator": "visible_instance_point",
+          "frame": 0,
+          "object": "obj",
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__PixMo-Points|present-instance pointing|point",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg"
+      ],
+      "question": "Locate the single visible chicken drumstick. Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          722,
+          708
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "PixMo-Points|present-instance pointing|point",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "visible_instance_point"
+        },
+        "evidence": {
+          "operator": "visible_instance_point",
+          "frame": 0,
+          "object": "obj",
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__PointBench|steerable|point",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg"
+      ],
+      "question": "Ignore the pan; point to the chicken drumstick on the plate. Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          722,
+          708
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "PointBench|steerable|point",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "visible_instance_point"
+        },
+        "evidence": {
+          "operator": "visible_instance_point",
+          "frame": 0,
+          "object": "obj",
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__PointBench|reasoning|point",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg"
+      ],
+      "question": "Which object must move to satisfy \"Pick the chicken drumstick from the plate and place it in the pan.\"? Point to it. Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          722,
+          708
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "PointBench|reasoning|point",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "visible_instance_point"
+        },
+        "evidence": {
+          "operator": "visible_instance_point",
+          "frame": 0,
+          "object": "obj",
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__PointBench|spatial|bbox",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg"
+      ],
+      "question": "Locate the chicken drumstick that appears right of the pan. Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          722,
+          708
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "PointBench|spatial|bbox",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "visible_instance_point"
+        },
+        "evidence": {
+          "operator": "visible_instance_point",
+          "frame": 0,
+          "object": "obj",
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__PointBench|spatial|point",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg"
+      ],
+      "question": "Point to the chicken drumstick positioned right of the pan in this image. Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          722,
+          708
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "PointBench|spatial|point",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "visible_instance_point"
+        },
+        "evidence": {
+          "operator": "visible_instance_point",
+          "frame": 0,
+          "object": "obj",
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__RefSpatial-Bench|location|point",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg"
+      ],
+      "question": "Point to the food that starts on the plate and is right of the pan in this image. Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          722,
+          708
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "RefSpatial-Bench|location|point",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "visible_instance_point"
+        },
+        "evidence": {
+          "operator": "visible_instance_point",
+          "frame": 0,
+          "object": "obj",
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__PIO|S2 task-driven pointing|point",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg"
+      ],
+      "question": "For \"Pick the chicken drumstick from the plate and place it in the pan.\", point to the destination receptacle. Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          377,
+          596
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "PIO|S2 task-driven pointing|point",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "visible_instance_point"
+        },
+        "evidence": {
+          "operator": "visible_instance_point",
+          "frame": 0,
+          "object": "container",
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__VABench-Point|destination spatial affordance|point",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg"
+      ],
+      "question": "Point to the receptacle where the chicken drumstick should be placed. Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          377,
+          596
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "VABench-Point|destination spatial affordance|point",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "visible_instance_point"
+        },
+        "evidence": {
+          "operator": "visible_instance_point",
+          "frame": 0,
+          "object": "container",
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__destination_point",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg"
+      ],
+      "question": "Pick the chicken drumstick from the plate and place it in the pan. Identify the final destination region where the object should be placed. Do not mark the source object. Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          377,
+          596
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "destination_point",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "visible_instance_point"
+        },
+        "evidence": {
+          "operator": "visible_instance_point",
+          "frame": 0,
+          "object": "container",
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__RoboAfford|spatial affordance localization|point",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg"
+      ],
+      "question": "Point to the receiving receptacle for the chicken drumstick. Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          377,
+          596
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "RoboAfford|spatial affordance localization|point",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "visible_instance_point"
+        },
+        "evidence": {
+          "operator": "visible_instance_point",
+          "frame": 0,
+          "object": "container",
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__RefSpatial-Bench|placement|point",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg"
+      ],
+      "question": "Point to the pan, the placement destination for the chicken drumstick. Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          377,
+          596
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "RefSpatial-Bench|placement|point",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "visible_instance_point"
+        },
+        "evidence": {
+          "operator": "visible_instance_point",
+          "frame": 0,
+          "object": "container",
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__PartAfford|demonstrated contact affordance|point",
+      "images": [
+        "frames/robot0_agentview_right/000072.jpg"
+      ],
+      "question": "Point to the demonstrated finger contact region used to grasp the chicken drumstick. Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          712.36,
+          692.691
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "PartAfford|demonstrated contact affordance|point",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "physical_contact_projection"
+        },
+        "evidence": {
+          "operator": "physical_contact_projection",
+          "frame": 72,
+          "contact": {
+            "geoms": [
+              "gripper0_right_finger2_collision",
+              "obj_g2"
+            ],
+            "position": [
+              0.44940930247840594,
+              -2.5351245009394656,
+              0.9697199279687507
+            ],
+            "distance": -0.001464533268920953
+          },
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__PointBench|affordable|point",
+      "images": [
+        "frames/robot0_agentview_right/000072.jpg"
+      ],
+      "question": "Locate the region of the chicken drumstick used for the demonstrated grasp. Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          712.36,
+          692.691
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "PointBench|affordable|point",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "physical_contact_projection"
+        },
+        "evidence": {
+          "operator": "physical_contact_projection",
+          "frame": 72,
+          "contact": {
+            "geoms": [
+              "gripper0_right_finger2_collision",
+              "obj_g2"
+            ],
+            "position": [
+              0.44940930247840594,
+              -2.5351245009394656,
+              0.9697199279687507
+            ],
+            "distance": -0.001464533268920953
+          },
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__RoboAfford|object affordance recognition|point",
+      "images": [
+        "frames/robot0_agentview_right/000072.jpg"
+      ],
+      "question": "Where do the fingers interact with the chicken drumstick? Return the demonstrated contact location. Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          712.36,
+          692.691
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "RoboAfford|object affordance recognition|point",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "physical_contact_projection"
+        },
+        "evidence": {
+          "operator": "physical_contact_projection",
+          "frame": 72,
+          "contact": {
+            "geoms": [
+              "gripper0_right_finger2_collision",
+              "obj_g2"
+            ],
+            "position": [
+              0.44940930247840594,
+              -2.5351245009394656,
+              0.9697199279687507
+            ],
+            "distance": -0.001464533268920953
+          },
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__demonstrated_contact_affordance",
+      "images": [
+        "frames/robot0_agentview_right/000072.jpg"
+      ],
+      "question": "Given the task \"Pick the chicken drumstick from the plate and place it in the pan.\", point to the demonstrated interaction target. Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          712.36,
+          692.691
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "demonstrated_contact_affordance",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "physical_contact_projection"
+        },
+        "evidence": {
+          "operator": "physical_contact_projection",
+          "frame": 72,
+          "contact": {
+            "geoms": [
+              "gripper0_right_finger2_collision",
+              "obj_g2"
+            ],
+            "position": [
+              0.44940930247840594,
+              -2.5351245009394656,
+              0.9697199279687507
+            ],
+            "distance": -0.001464533268920953
+          },
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__relational_contact_placement",
+      "images": [
+        "frames/robot0_agentview_right/000072.jpg"
+      ],
+      "question": "Locate the physical contact between the gripper fingers and the chicken drumstick. Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          712.36,
+          692.691
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "relational_contact_placement",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "physical_contact_projection"
+        },
+        "evidence": {
+          "operator": "physical_contact_projection",
+          "frame": 72,
+          "contact": {
+            "geoms": [
+              "gripper0_right_finger2_collision",
+              "obj_g2"
+            ],
+            "position": [
+              0.44940930247840594,
+              -2.5351245009394656,
+              0.9697199279687507
+            ],
+            "distance": -0.001464533268920953
+          },
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__RoboSpatial-Home|configuration|bbox",
+      "images": [
+        "frames/robot0_agentview_left/000219.jpg"
+      ],
+      "question": "Point to the chicken drumstick after demonstrated placement. Return only normalized 2D point coordinates in the range [0, 1000]. Use exactly this JSON format: [{\"point_2d\":[x,y]}]. Return exactly one point. Do not output <object>, <area>, <affordance>, <grasp pose>, a bounding box, labels, or explanations.",
+      "target": {
+        "type": "point",
+        "point": [
+          487,
+          618
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "RoboSpatial-Home|configuration|bbox",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "visible_instance_point"
+        },
+        "evidence": {
+          "operator": "visible_instance_point",
+          "frame": 219,
+          "object": "obj",
+          "view": "robot0_agentview_left"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__configuration",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg"
+      ],
+      "question": "Which target/gripper configuration is shown?\n(A) the chicken drumstick is right of the robot gripper\n(B) the chicken drumstick is left of the robot gripper\n(C) the chicken drumstick is below the robot gripper\n(D) the chicken drumstick is above the robot gripper\nAnswer with the option letter.",
+      "target": {
+        "type": "choice",
+        "correct_label": "A",
+        "labels": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "metadata": {
+        "family": "configuration",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "target_gripper_relation"
+        },
+        "evidence": {
+          "operator": "target_gripper_relation",
+          "frame": 0,
+          "target_point": [
+            722,
+            708
+          ],
+          "gripper_point": [
+            407.072,
+            466.333
+          ],
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__ContactDecide",
+      "images": [
+        "frames/robot0_agentview_left/000159.jpg",
+        "frames/robot0_agentview_right/000159.jpg"
+      ],
+      "question": "Are the fingers contacting the chicken drumstick?\n(A) Yes\n(B) No\nAnswer with the option letter.",
+      "target": {
+        "type": "choice",
+        "correct_label": "A",
+        "labels": [
+          "A",
+          "B"
+        ]
+      },
+      "metadata": {
+        "family": "ContactDecide",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "contact_and_release"
+        },
+        "evidence": {
+          "operator": "contact_and_release",
+          "frame": 159,
+          "contacts": [
+            {
+              "geoms": [
+                "gripper0_right_hand_collision",
+                "obj_g2"
+              ],
+              "position": [
+                0.49064616338835765,
+                -3.3261409100385864,
+                1.102715742852614
+              ],
+              "distance": -0.0037891325013988406
+            },
+            {
+              "geoms": [
+                "gripper0_right_finger1_collision",
+                "obj_g2"
+              ],
+              "position": [
+                0.48150163965660325,
+                -3.294936043989316,
+                1.0661465739059355
+              ],
+              "distance": -0.0005835622997752404
+            },
+            {
+              "geoms": [
+                "gripper0_right_finger1_pad_collision",
+                "obj_g2"
+              ],
+              "position": [
+                0.4814479610348782,
+                -3.2951815506530213,
+                1.0661891558170686
+              ],
+              "distance": -0.0010907607837472883
+            },
+            {
+              "geoms": [
+                "gripper0_right_finger2_collision",
+                "obj_g2"
+              ],
+              "position": [
+                0.47306026470032125,
+                -3.361460962495782,
+                1.072618380049251
+              ],
+              "distance": -0.0007491918956982784
+            },
+            {
+              "geoms": [
+                "gripper0_right_finger2_pad_collision",
+                "obj_g2"
+              ],
+              "position": [
+                0.4728216330728584,
+                -3.3604888400496242,
+                1.0752461274395468
+              ],
+              "distance": -0.0009809785986106005
+            }
+          ],
+          "finger_contact": [
+            true,
+            true
+          ],
+          "criterion": "object-to-container physical contact and no finger contact (demonstrated placement; not a call to environment._check_success)"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__Q3_secure_grasp_status",
+      "images": [
+        "frames/robot0_agentview_left/000159.jpg",
+        "frames/robot0_agentview_right/000159.jpg"
+      ],
+      "question": "Is the chicken drumstick engaged by both opposing fingers?\n(A) No\n(B) Yes\nAnswer with the option letter.",
+      "target": {
+        "type": "choice",
+        "correct_label": "B",
+        "labels": [
+          "A",
+          "B"
+        ]
+      },
+      "metadata": {
+        "family": "Q3_secure_grasp_status",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "contact_and_release"
+        },
+        "evidence": {
+          "operator": "contact_and_release",
+          "frame": 159,
+          "contacts": [
+            {
+              "geoms": [
+                "gripper0_right_hand_collision",
+                "obj_g2"
+              ],
+              "position": [
+                0.49064616338835765,
+                -3.3261409100385864,
+                1.102715742852614
+              ],
+              "distance": -0.0037891325013988406
+            },
+            {
+              "geoms": [
+                "gripper0_right_finger1_collision",
+                "obj_g2"
+              ],
+              "position": [
+                0.48150163965660325,
+                -3.294936043989316,
+                1.0661465739059355
+              ],
+              "distance": -0.0005835622997752404
+            },
+            {
+              "geoms": [
+                "gripper0_right_finger1_pad_collision",
+                "obj_g2"
+              ],
+              "position": [
+                0.4814479610348782,
+                -3.2951815506530213,
+                1.0661891558170686
+              ],
+              "distance": -0.0010907607837472883
+            },
+            {
+              "geoms": [
+                "gripper0_right_finger2_collision",
+                "obj_g2"
+              ],
+              "position": [
+                0.47306026470032125,
+                -3.361460962495782,
+                1.072618380049251
+              ],
+              "distance": -0.0007491918956982784
+            },
+            {
+              "geoms": [
+                "gripper0_right_finger2_pad_collision",
+                "obj_g2"
+              ],
+              "position": [
+                0.4728216330728584,
+                -3.3604888400496242,
+                1.0752461274395468
+              ],
+              "distance": -0.0009809785986106005
+            }
+          ],
+          "finger_contact": [
+            true,
+            true
+          ],
+          "criterion": "object-to-container physical contact and no finger contact (demonstrated placement; not a call to environment._check_success)"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__Q4_task_completion_status",
+      "images": [
+        "frames/robot0_agentview_left/000219.jpg"
+      ],
+      "question": "Has the chicken drumstick been released onto the pan?\n(A) Yes\n(B) No\nAnswer with the option letter.",
+      "target": {
+        "type": "choice",
+        "correct_label": "A",
+        "labels": [
+          "A",
+          "B"
+        ]
+      },
+      "metadata": {
+        "family": "Q4_task_completion_status",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "contact_and_release"
+        },
+        "evidence": {
+          "operator": "contact_and_release",
+          "frame": 219,
+          "contacts": [
+            {
+              "geoms": [
+                "container_g11",
+                "obj_g2"
+              ],
+              "position": [
+                0.39013743199411854,
+                -3.367627054694184,
+                0.9296675866752793
+              ],
+              "distance": -4.550305200261696e-07
+            },
+            {
+              "geoms": [
+                "container_g30",
+                "obj_g2"
+              ],
+              "position": [
+                0.3711529402922815,
+                -3.355987804781921,
+                0.9260815647994205
+              ],
+              "distance": -6.189850179740952e-07
+            },
+            {
+              "geoms": [
+                "container_g30",
+                "obj_g2"
+              ],
+              "position": [
+                0.3787744214936145,
+                -3.3477965291448255,
+                0.9258223205883709
+              ],
+              "distance": -6.189850179740952e-07
+            }
+          ],
+          "finger_contact": [
+            false,
+            false
+          ],
+          "criterion": "object-to-container physical contact and no finger contact (demonstrated placement; not a call to environment._check_success)"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__Success_Task",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg",
+        "frames/robot0_agentview_left/000219.jpg"
+      ],
+      "question": "Based on these frames of one robot execution, was the task \"Pick the chicken drumstick from the plate and place it in the pan.\" completed successfully?\n(A) Yes\n(B) No\nAnswer with the option letter.",
+      "target": {
+        "type": "choice",
+        "correct_label": "A",
+        "labels": [
+          "A",
+          "B"
+        ]
+      },
+      "metadata": {
+        "family": "Success_Task",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "contact_and_release"
+        },
+        "evidence": {
+          "operator": "contact_and_release",
+          "frame": 219,
+          "contacts": [
+            {
+              "geoms": [
+                "container_g11",
+                "obj_g2"
+              ],
+              "position": [
+                0.39013743199411854,
+                -3.367627054694184,
+                0.9296675866752793
+              ],
+              "distance": -4.550305200261696e-07
+            },
+            {
+              "geoms": [
+                "container_g30",
+                "obj_g2"
+              ],
+              "position": [
+                0.3711529402922815,
+                -3.355987804781921,
+                0.9260815647994205
+              ],
+              "distance": -6.189850179740952e-07
+            },
+            {
+              "geoms": [
+                "container_g30",
+                "obj_g2"
+              ],
+              "position": [
+                0.3787744214936145,
+                -3.3477965291448255,
+                0.9258223205883709
+              ],
+              "distance": -6.189850179740952e-07
+            }
+          ],
+          "finger_contact": [
+            false,
+            false
+          ],
+          "criterion": "object-to-container physical contact and no finger contact (demonstrated placement; not a call to environment._check_success)"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__balanced present-absent localization",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg"
+      ],
+      "question": "Point to every visible chicken drumstick, exactly one point per instance. If none are visible, output \"No object\". Otherwise return only JSON in the format [{\"point_2d\":[x,y]}], with integer coordinates normalized to [0,1000].",
+      "target": {
+        "type": "point_or_no_object",
+        "expected_kind": "point",
+        "point": [
+          722,
+          708
+        ],
+        "key": "point_2d"
+      },
+      "metadata": {
+        "family": "balanced present-absent localization",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "visible_instance_point"
+        },
+        "evidence": {
+          "operator": "visible_instance_point",
+          "frame": 0,
+          "object": "obj"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__balanced present-absent localization__absent",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg"
+      ],
+      "question": "Point to every visible pineapple, exactly one point per instance. If none are visible, output \"No object\". Otherwise return only JSON in the format [{\"point_2d\":[x,y]}], with integer coordinates normalized to [0,1000].",
+      "target": {
+        "type": "point_or_no_object",
+        "expected_kind": "no_object",
+        "accepted_text": [
+          "No object"
+        ]
+      },
+      "metadata": {
+        "family": "balanced present-absent localization",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "scene_object_absence"
+        },
+        "evidence": {
+          "operator": "scene_object_absence",
+          "frame": 0,
+          "queried_class": "pineapple",
+          "scene_classes": [
+            "pan",
+            "plate",
+            "chicken_drumstick"
+          ],
+          "asset_manifest": "ir/episode_ir.json#source_manifest"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__immediate_planning",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg"
+      ],
+      "question": "Given \"Pick the chicken drumstick from the plate and place it in the pan.\", which sequence remains to be performed?\n(A) approach and grasp the chicken drumstick, move it to the pan, and release it\n(B) move the pan to the plate\n(C) leave the chicken drumstick on the plate\n(D) open the pan\nAnswer with the option letter.",
+      "target": {
+        "type": "choice",
+        "correct_label": "A",
+        "labels": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "metadata": {
+        "family": "immediate_planning",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "state_conditioned_pick_place_planner"
+        },
+        "evidence": {
+          "operator": "state_conditioned_pick_place_planner",
+          "context_frame": 0,
+          "phase": "approach",
+          "finger_contact": [
+            false,
+            false
+          ],
+          "secure_grasp": false,
+          "released_in_destination": false,
+          "frames": [
+            0
+          ],
+          "instruction": "Pick the chicken drumstick from the plate and place it in the pan.",
+          "demonstrated_contact": 72,
+          "demonstrated_placement": 219
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__immediate_planning_with_context",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg",
+        "frames/robot0_agentview_right/000019.jpg"
+      ],
+      "question": "Given \"Pick the chicken drumstick from the plate and place it in the pan.\", which sequence remains to be performed?\n(A) open the pan\n(B) leave the chicken drumstick on the plate\n(C) approach and grasp the chicken drumstick, move it to the pan, and release it\n(D) move the pan to the plate\nAnswer with the option letter.",
+      "target": {
+        "type": "choice",
+        "correct_label": "C",
+        "labels": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "metadata": {
+        "family": "immediate_planning_with_context",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "state_conditioned_pick_place_planner"
+        },
+        "evidence": {
+          "operator": "state_conditioned_pick_place_planner",
+          "context_frame": 19,
+          "phase": "approach",
+          "finger_contact": [
+            false,
+            false
+          ],
+          "secure_grasp": false,
+          "released_in_destination": false,
+          "frames": [
+            0,
+            19
+          ],
+          "instruction": "Pick the chicken drumstick from the plate and place it in the pan.",
+          "demonstrated_contact": 72,
+          "demonstrated_placement": 219
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__remaining_long_horizon_planning",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg",
+        "frames/robot0_agentview_right/000019.jpg",
+        "frames/robot0_agentview_right/000039.jpg"
+      ],
+      "question": "Given \"Pick the chicken drumstick from the plate and place it in the pan.\", which sequence remains to be performed?\n(A) open the pan\n(B) leave the chicken drumstick on the plate\n(C) move the pan to the plate\n(D) approach and grasp the chicken drumstick, move it to the pan, and release it\nAnswer with the option letter.",
+      "target": {
+        "type": "choice",
+        "correct_label": "D",
+        "labels": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "metadata": {
+        "family": "remaining_long_horizon_planning",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "state_conditioned_pick_place_planner"
+        },
+        "evidence": {
+          "operator": "state_conditioned_pick_place_planner",
+          "context_frame": 39,
+          "phase": "approach",
+          "finger_contact": [
+            false,
+            false
+          ],
+          "secure_grasp": false,
+          "released_in_destination": false,
+          "frames": [
+            0,
+            19,
+            39
+          ],
+          "instruction": "Pick the chicken drumstick from the plate and place it in the pan.",
+          "demonstrated_contact": 72,
+          "demonstrated_placement": 219
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__future_prediction",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg"
+      ],
+      "question": "If the demonstrated task \"Pick the chicken drumstick from the plate and place it in the pan.\" succeeds, what will happen?\n(A) The robot will open a drawer.\n(B) The chicken drumstick will move from the plate into the pan.\n(C) The pan will leave the stove.\n(D) The chicken drumstick will stay on the plate.\nAnswer with the option letter.",
+      "target": {
+        "type": "choice",
+        "correct_label": "B",
+        "labels": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "metadata": {
+        "family": "future_prediction",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "instruction_conditioned_goal"
+        },
+        "evidence": {
+          "operator": "instruction_conditioned_goal",
+          "instruction": "Pick the chicken drumstick from the plate and place it in the pan."
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__action_consequence",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg",
+        "frames/robot0_agentview_left/000219.jpg"
+      ],
+      "question": "What changed from the first image to the second?\n(A) The chicken drumstick stayed on the plate.\n(B) The robot left the kitchen.\n(C) The chicken drumstick moved from the plate to the pan.\n(D) The pan was opened.\nAnswer with the option letter.",
+      "target": {
+        "type": "choice",
+        "correct_label": "C",
+        "labels": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "metadata": {
+        "family": "action_consequence",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "object_displacement_and_destination_contact"
+        },
+        "evidence": {
+          "operator": "object_displacement_and_destination_contact",
+          "initial": {
+            "container": [
+              0.3818352513713178,
+              -3.3573926472556237,
+              0.9407562116476472
+            ],
+            "obj_container": [
+              0.46323048534749534,
+              -2.5145279899363837,
+              0.9306175939641566
+            ],
+            "obj": [
+              0.46106866196748714,
+              -2.5204056688611316,
+              0.9527588678959767
+            ]
+          },
+          "final": {
+            "container": [
+              0.3818348069063065,
+              -3.3573946635581455,
+              0.9407523613917016
+            ],
+            "obj_container": [
+              0.4632701776814334,
+              -2.51427443752824,
+              0.9306534592188758
+            ],
+            "obj": [
+              0.38612896048674483,
+              -3.3653315949619036,
+              0.9622510225482688
+            ]
+          },
+          "released_in_destination": true
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__multi_view_reasoning",
+      "images": [
+        "frames/robot0_agentview_right/000000.jpg",
+        "frames/robot0_agentview_left/000000.jpg"
+      ],
+      "question": "What task do these synchronized views support?\n(A) Pick the chicken drumstick from the plate and place it in the pan.\n(B) Turn on the faucet.\n(C) Close a drawer.\n(D) Open a cabinet.\nAnswer with the option letter.",
+      "target": {
+        "type": "choice",
+        "correct_label": "A",
+        "labels": [
+          "A",
+          "B",
+          "C",
+          "D"
+        ]
+      },
+      "metadata": {
+        "family": "multi_view_reasoning",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "synchronized_views_and_instruction"
+        },
+        "evidence": {
+          "operator": "synchronized_views_and_instruction",
+          "frames": [
+            0,
+            0
+          ]
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__multi_view_task_consistency",
+      "images": [
+        "frames/robot0_agentview_right/000159.jpg",
+        "frames/robot0_agentview_left/000159.jpg"
+      ],
+      "question": "Are the two views consistent with grasping the same chicken drumstick?\n(A) No\n(B) Yes\nAnswer with the option letter.",
+      "target": {
+        "type": "choice",
+        "correct_label": "B",
+        "labels": [
+          "A",
+          "B"
+        ]
+      },
+      "metadata": {
+        "family": "multi_view_task_consistency",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "shared_object_identity_and_contact"
+        },
+        "evidence": {
+          "operator": "shared_object_identity_and_contact",
+          "frame": 159
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__multi_view_phase_consistency",
+      "images": [
+        "frames/robot0_agentview_right/000159.jpg",
+        "frames/robot0_agentview_left/000159.jpg"
+      ],
+      "question": "Which action phase explains both synchronized views?\n(A) approaching the untouched chicken drumstick\n(B) idle with no object interaction\n(C) holding the chicken drumstick between the fingers\n(D) the chicken drumstick is released in the pan\n(E) establishing contact with the chicken drumstick\nAnswer with the option letter.",
+      "target": {
+        "type": "choice",
+        "correct_label": "C",
+        "labels": [
+          "A",
+          "B",
+          "C",
+          "D",
+          "E"
+        ]
+      },
+      "metadata": {
+        "family": "multi_view_phase_consistency",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "simulator_phase_classifier"
+        },
+        "evidence": {
+          "operator": "simulator_phase_classifier",
+          "frame": 159,
+          "phase": "holding"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__continuous_trajectory_eval_format/sharerobot_trajectory_variable_point_format",
+      "images": [
+        "frames/robot0_agentview_right/000019.jpg"
+      ],
+      "question": "You are currently a robot performing robotic manipulation tasks. The task instruction is: Pick the chicken drumstick from the plate and place it in the pan.\nUse 2D points to trace the immediate short-horizon movement trajectory of the robotic arm end-effector (not the manipulated object) over the next 10 simulator frames at 20 Hz.\nThe current gripper position is [507.877, 589.504].\nProvide the points in trajectory order as 8 evenly sampled waypoints. Do not include the current point.\nReturn only a valid JSON array in exactly this format: [{\"point_2d\":[x1,y1]},...,{\"point_2d\":[xN,yN]}].\nCoordinates are [x,y] values normalized to [0,1000] on both axes. Do not add labels, bounding boxes, z coordinates, or extra JSON fields.",
+      "target": {
+        "type": "traj2d",
+        "traj": [
+          [
+            514.721,
+            594.284
+          ],
+          [
+            523.5474,
+            600.2386
+          ],
+          [
+            532.4073,
+            606.3906
+          ],
+          [
+            541.4257,
+            612.7566
+          ],
+          [
+            550.6113,
+            619.4754
+          ],
+          [
+            559.8483,
+            626.9724
+          ],
+          [
+            569.1337,
+            635.3163
+          ],
+          [
+            578.359,
+            644.388
+          ]
+        ],
+        "key": "point_2d",
+        "n_points": 8,
+        "gt_motion": 81.171473049179
+      },
+      "metadata": {
+        "family": "continuous_trajectory_eval_format/sharerobot_trajectory_variable_point_format",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "calibrated_eef_projection"
+        },
+        "evidence": {
+          "operator": "calibrated_eef_projection",
+          "context_frame": 19,
+          "state_indices": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+          ],
+          "waypoint_frame_offsets": [
+            1.0,
+            2.2857142857142856,
+            3.5714285714285716,
+            4.857142857142858,
+            6.142857142857143,
+            7.428571428571429,
+            8.714285714285715,
+            10.0
+          ],
+          "horizon_frames": 10,
+          "rate_hz": 20,
+          "exclude_current": true,
+          "view": "robot0_agentview_right"
+        }
+      }
+    },
+    {
+      "id": "robocasa-episode__continuous_trajectory_eval_format/vabench_visual_trace_8point_format",
+      "images": [
+        "frames/robot0_agentview_right/000039.jpg"
+      ],
+      "question": "You are currently a robot performing robotic manipulation tasks. The task instruction is: Pick the chicken drumstick from the plate and place it in the pan.\nUse 2D points to trace the immediate short-horizon movement trajectory of the robotic arm end-effector (not the manipulated object) over the next 10 simulator frames at 20 Hz.\nThe current gripper position is [640.581, 724.012].\nProvide the points in trajectory order as 8 evenly sampled waypoints. Do not include the current point.\nReturn only a valid JSON array in exactly this format: [{\"point_2d\":[x1,y1]},...,{\"point_2d\":[xN,yN]}].\nCoordinates are [x,y] values normalized to [0,1000] on both axes. Do not add labels, bounding boxes, z coordinates, or extra JSON fields.",
+      "target": {
+        "type": "traj2d",
+        "traj": [
+          [
+            645.965,
+            728.437
+          ],
+          [
+            652.4419,
+            732.3487
+          ],
+          [
+            658.4214,
+            735.1706
+          ],
+          [
+            663.893,
+            737.0919
+          ],
+          [
+            668.8227,
+            737.9861
+          ],
+          [
+            673.2644,
+            738.2176
+          ],
+          [
+            676.8046,
+            738.4169
+          ],
+          [
+            679.305,
+            739.471
+          ]
+        ],
+        "key": "point_2d",
+        "n_points": 8,
+        "gt_motion": 35.69471120243268
+      },
+      "metadata": {
+        "family": "continuous_trajectory_eval_format/vabench_visual_trace_8point_format",
+        "episode_id": "robocasa-episode",
+        "source_dataset": "RoboCasa",
+        "label_source": "raw simulation state and rendered instance/depth IR",
+        "generation": {
+          "generator": "scripted",
+          "rule": "calibrated_eef_projection"
+        },
+        "evidence": {
+          "operator": "calibrated_eef_projection",
+          "context_frame": 39,
+          "state_indices": [
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49
+          ],
+          "waypoint_frame_offsets": [
+            1.0,
+            2.2857142857142856,
+            3.5714285714285716,
+            4.857142857142858,
+            6.142857142857143,
+            7.428571428571429,
+            8.714285714285715,
+            10.0
+          ],
+          "horizon_frames": 10,
+          "rate_hz": 20,
+          "exclude_current": true,
+          "view": "robot0_agentview_right"
+        }
+      }
+    }
+  ]
+}
