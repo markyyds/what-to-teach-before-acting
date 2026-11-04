@@ -55,3 +55,17 @@ body{background:var(--bg)}.reading-progress{position:fixed;left:0;top:0;height:3
   .demo-footer{font-size:11px}
   .resource-links a{font-size:12px}
 }
+
+/* Paper authors and affiliations. */
+.hero .author-details{max-width:650px}
+.hero .authors{line-height:1.8}
+.hero .authors>span{white-space:nowrap}
+.hero .author-details sup{font-size:.72em;vertical-align:super;margin-right:2px}
+.hero .author-affiliations{display:flex;flex-wrap:wrap;gap:3px 17px;margin-top:7px;color:#4e637e;font-size:13px;line-height:1.7}
+.hero .author-affiliations>span{white-space:nowrap}
+.hero .author-notes{display:flex;flex-direction:column;gap:3px;margin-top:9px;font-size:12px;line-height:1.65;color:#5c728f}
+.hero .author-notes a{color:inherit}
+@media(max-width:1100px){.hero .author-details{max-width:570px}}
+@media(max-width:960px){.hero .author-details{max-width:490px}}
+@media(max-width:800px){.hero .author-details{max-width:none}}
+@media(max-width:620px){.hero .author-affiliations{font-size:12px;gap:3px 12px}.hero .author-notes{font-size:12px}}
