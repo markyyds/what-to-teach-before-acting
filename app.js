@@ -64,7 +64,7 @@ function renderComparison(key) {
   $("#comparison-kicker").textContent = c.kicker;
   $("#comparison-title").textContent = c.title;
   $("#comparison-description").textContent = c.description;
-  $("#comparison-reference").href = `assets/paper.pdf#page=${c.page}`;
+  $("#comparison-reference").href = `assets/what-to-teach-before-acting.pdf?v=0156a22d#page=${c.page}`;
   const delta = (n) => `${n > 0 ? "+" : ""}${n.toFixed(2)}`;
   $("#comparison-deltas").innerHTML = `<div class="delta"><strong>${delta(c.to.x-c.from.x)}</strong><small>VLM average</small></div><div class="delta"><strong>${delta(c.to.y-c.from.y)} pp</strong><small>Policy success</small></div>`;
   const x = (value) => 70 + (value-54.3)/2.9*340;
